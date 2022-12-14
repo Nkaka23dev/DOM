@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form action="" id="form">
+        <div class="title">Get Started</div>
+        <!--  /** 
+        * ! User name is placed right here
+      **/ -->
+        <div>
+            <label for="username">User Name</label>
+            <box-icon type='solid' name='user-circle'></box-icon>
+            <input type="text" name="username" id="username">
+            <!-- <box-icon type='solid' name='alarm-exclamation' class="failure-icon" ></box-icon> -->
+            <box-icon name='check-circle' class="success-icon"></box-icon>
+            <div class="error"></div>
+        </div>
+        <!--  /** 
+            * ! Email is placed right here
+          **/ -->
+        <div>
+            <label for="email">Email</label>
+            <box-icon name='envelope'></box-icon>
+            <input type="email" name="email" id="email">
+            <!-- <box-icon type='solid' name='alarm-exclamation' class="failure-icon" ></box-icon> -->
+            <box-icon name='check-circle' class="success-icon"></box-icon>
+            <div class="error"></div>
+        </div>
+        <!--  /** 
+    * ! password is placed right here
+**/ -->
+        <div>
+            <label for="password">Password</label>
+            <box-icon type='solid' name='lock-alt'></box-icon>
+            <input type="password" name="password" id="password">
+            <!-- <box-icon type='solid' name='alarm-exclamation' class="failure-icon" ></box-icon> -->
+            <box-icon name='check-circle' class="success-icon"></box-icon>
+            <div class="error"></div>
+        </div>
+        <button>Submit</button>
+    </form>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>

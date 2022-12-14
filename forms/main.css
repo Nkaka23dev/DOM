@@ -1,0 +1,70 @@
+/* /** 
+   ! * Changing default style of the browswer
+/** */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+form{
+    max-width: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0,0.1);
+    padding: 50px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+form> div> input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 35px;
+}
+label{
+  padding-bottom: 5px;
+  display: block;   
+}
+form div{
+    padding-bottom: 5px;
+    position: relative;
+   }
+form div box-icon {
+    position: absolute;
+    margin: 10px;
+}
+/* /** 
+   ! * styles of the icons
+/** */ 
+.success-icon, .failure-icon{
+    right: 0;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: rgb(77, 77, 195);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.4s ;
+    border-radius: 5px;
+}
+button:hover{
+    background: rgb(88, 88, 194);
+}
+/* /** 
+   ! * styles for the form
+/** */  
+/* /** 
+   ! * styles of the icons
+/** */
