@@ -13,12 +13,10 @@ body {
 .road {
     position: relative;
 }
-
 .sky {
     height: 50%;
     background: skyblue;
 }
-
 .grass {
     height: 15%;
     background: seagreen;
@@ -32,7 +30,6 @@ body {
     border-bottom: 10px solid grey;
     width: 100%;
 }
-
 .lines {
     box-sizing: border-box;
     border: 5px dashed #fff;
@@ -43,13 +40,15 @@ body {
 }
 .mario {
     position: absolute;
-    top: -45%;
+    top: -45px;
     left: 0px;
-    animation-name: drive;
+    /* animation-name: drive;
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1, -0.27, 0.58, 1);
+    animation-timing-function: cubic-bezier(1, -0.27, 0.58, 1); */
+    animation: drive 3s both infinite linear, 
+               jump 0.3s 1.2s infinite ease;
 }
 .luigi {
     position: absolute;
@@ -61,7 +60,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
    
-}
+}e
 .cloud {
     position: absolute;
 }
@@ -93,4 +92,9 @@ body {
     to{
        left: 100%;
     }
+} 
+@keyframes jump {
+    0%{top: -45px}
+    50%{top: -100px}
+    100%{top:-45px}
 }
